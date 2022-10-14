@@ -1,0 +1,7 @@
+patch:
+  translator/dictionary: easy_en.extended
+  translator/enable_user_dict: true
+  translator/enable_sentence: true
+  easy_en/split_sentence: true
+  easy_en/use_wordninja_rs_lua_module: true
+  easy_en/wordninja_rs_lua_module_path: "C:/Users/klchen/AppData/Roaming/Rime/dll/wordninja.dll"

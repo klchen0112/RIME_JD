@@ -1,0 +1,16 @@
+# Rime dictionary
+# encoding: utf-8
+---
+name: easy_en.extended
+version: "2022.05.28"
+sort: by_weight #字典初始排序，可選original或by_weight
+use_preset_vocabulary: false
+
+import_tables:
+  - "easy_en"
+  - "dicts/math/calculus_en_word"
+  - "dicts/math/linear_algebra_en_word"
+  - "dicts/math/probability_en_word"
+  - "dicts/cs/algorithm"
+  - "dicts/cs/ide_editor"
+  - "dicts/cs/company"

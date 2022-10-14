@@ -1,0 +1,13 @@
+# Rime dictionary
+# mim: set ts=8 sw=8 noet:
+# encoding: utf-8
+# klchen <klchen0112@gmail.com>
+
+---
+name: company
+version: "2021.11.29"
+sort: by_weight
+use_preset_vocabulary: false
+...
+
+JetBrains	jetbrains	1

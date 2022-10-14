@@ -1,0 +1,106 @@
+# Rime table
+# coding: utf-8
+#
+# 用於【朙月拼音】系列輸入方案
+# 【小狼毫】0.9.21 以上
+#
+# 請將該文件以UTF-8編碼保存爲
+# Rime用戶文件夾/custom_phrase.txt
+#
+# 碼表各字段以製表符（Tab）分隔
+# 順序爲：文字、編碼、權重（決定重碼的次序、可選）
+#
+# 雖然文本碼表編輯較爲方便，但不適合導入大量條目
+#
+# no comment
+# rime
+中州韻輸入法引擎	rime	2
+又双叒叕	yyy
+http://rime.im/	rime	1
+Rime	rime	3
+iRime	irime	3
+# short cut
+⌘	cmd
+⌃	ctl
+⌥	opt
+⇧	shift
+# operate system
+macOS High Sierra	macos	2
+macOS Mojave	macos	3
+macOS	macos	4
+macOS Sierra	macos	1
+Google Analytics	ga
+macOS	macos
+Linux	linux
+# computer science
+GBK	gbk
+UTF-8	utfba
+CSS	css
+HTML html
+JavaScript js
+TypeScript ts
+jQuery	jquery
+MySQL	mysql
+SQL	sql
+Objective-C	ojbc
+Ruby	ruby
+Rust	rust
+Swift	swift
+GitHub	github
+IPv4	ipv
+IPv6	ipv
+GNU/Linux	linux
+RANSAC ransac
+# apple product
+AirPods	air
+AirPods Pro	air
+AirPods 2	air
+iOS	ios
+iPad	ipad
+iPad Pro	ipad
+iPad Pro	ipadpro
+iPhone	iphone
+iTunes	itunes
+Mac mini	macmini
+MacBook Pro	mbp
+MacBook Air	mba
+MBP	mbp
+MacBook	macbook
+Apple	apple
+iMac	imac
+iPod	ipod
+Mac App Store	mas
+OS X	osx
+Mac	mac
+iCloud	icloud
+AppleId	appleid
+Touch Bar	touchbar
+Face ID	faceid
+# others
+Keychron	keychron
+WeChat	wechat
+U盘	upj
+IPTV	iptv
+X-Ray	xray
+Xbox One	xbox
+Youku	youku
+YouTube	youtube
+又双叒叕	yzyz
+Quantumult	quan
+Dropbox	dropbox
+T恤	txu
+Wi-Fi	wifi
+Marginnote	marginnote
+# SOFTWARE
+Logseq	logseq
+# Website
+zhihu.com	vihu
+OpenCV	opencv	0
+# GTD
+TODO	todo
+DOING	doing
+DONE	done
+# APP
+QQ	qq
+# product
+type-C	typec
