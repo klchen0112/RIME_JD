@@ -58,4 +58,12 @@ smart_2 = require("smart_2")
 local easy_en = require("easy_en")
 easy_en_enhance_filter = easy_en.enhance_filter
 
+-- melt pinyin
+local M= require("melt")
+get_date = M.getdate
+jpcharset_filter = M.jpcharsetfilter
+long_word_filter = M.longwordfilter
+autocap_filter =M.autocapfilter
+oo_processor = M.ooprocessor
+oo_filter =M.oofilter
 

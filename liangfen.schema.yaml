@@ -4,7 +4,7 @@
 
 schema:
   schema_id: liangfen
-  name: 两分拼音・精简
+  name: 两分拼音
   version: "4.0"
   author:
     - TianHeng <2417647441@qq.com>
@@ -23,7 +23,7 @@ switches:
     states: [ 简体, 繁體 ]
   - name: pinyin #拼音滤镜
     reset: 1
-    states: [关拼音,拼音] 
+    states: [关拼音,拼音]
 engine:
   processors:
     - ascii_composer
