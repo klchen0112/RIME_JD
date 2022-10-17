@@ -91,14 +91,14 @@ speller:
 
 # 翻译器
 translator:
-  dictionary: melt_pinyin
+  dictionary: melt_pinyin.extended
   enable_correction: false
   preedit_format:
     - "xform/([nl])v/$1ü/"
     - "xform/([nl])ue/$1üe/"
     - "xform/([jqxy])v/$1u/"
 
-easy_english:
+easy_en:
   dictionary: easy_en.extended
   enable_completion: true
   enable_sentence: false
@@ -147,3 +147,10 @@ recognizer:
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     punct: "^/([0-9]+[a-z]*|[a-z]+)$"
     reverse_lookup: "`[a-z]*'?$"
+
+
+# grammar:
+#   language: zh-hans-t-essay-bgw
+# translator/contextual_suggestions: true
+# translator/max_homophones: 7
+# translator/max_homographs: 7

@@ -17,14 +17,14 @@ patch:
     - schema: xkjd6
     - schema: easy_en
     - schema: liangfen
-    - schema: pinyin_simp
+    - schema: melt_pinyin
   menu:
     page_size: 6
   ascii_composer:
     good_old_caps_lock: true
     switch_key:
-      Shift_L: inline_ascii
-      Shift_R: inline_ascii
+      Shift_L: commit_code
+      Shift_R: commit_code
       Control_L: noop
       Control_R: noop
       Caps_Lock: commit_code
@@ -51,7 +51,7 @@ patch:
       - { when: always, accept: Control+Shift+1, select: xkjd6 }
       - { when: always, accept: Control+Shift+2, select: easy_en }
       - { when: always, accept: Control+Shift+3, select: liangfen }
-      - { when: always, accept: Control+Shift+4, select: pinyin_simp }
+      - { when: always, accept: Control+Shift+4, select: melt_pinyin }
   ascii_composer:
     good_old_caps_lock: true
     switch_key:
