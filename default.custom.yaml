@@ -20,10 +20,15 @@ patch:
     - schema: pinyin_simp
   menu:
     page_size: 6
-  ascii_composer/good_old_caps_lock: true
-  ascii_composer/switch_key:
-    Caps_Lock: commit_text
-    Shift_L: commit_text
+  ascii_composer:
+    good_old_caps_lock: true
+    switch_key:
+      Shift_L: inline_ascii
+      Shift_R: inline_ascii
+      Control_L: noop
+      Control_R: noop
+      Caps_Lock: commit_code
+      Eisu_toggle: clear
   key_binder:
     bindings:
       - { when: composing, accept: Control+p, send: Up }
