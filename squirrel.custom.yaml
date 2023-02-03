@@ -61,6 +61,8 @@ patch:
       ascii_mode: true
     com.runningwithcrayons.Alfred-2:
       ascii_mode: true
+    com.raycast.macos:
+      ascii_mode: true
     com.blacktree.Quicksilver:
       ascii_mode: true
     org.vim.MacVim:
@@ -97,7 +99,7 @@ patch:
   # 如果想要修改皮肤，直接更改 color_scheme 的值即可
   style:
     # optional: define both light and dark color schemes to match system appearance
-    color_scheme: ink
+    color_scheme: system_blue
     color_scheme_dark: dracula
 
     # Deprecated since 0.36, Squirrel 0.15
@@ -115,9 +117,9 @@ patch:
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间"
     # adjust the base line of vertical text
     #base_offset: 6
-    font_face: "PingFang SC,Symbola,Roboto Mono,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
+    font_face: "PingFang SC,Apple Color Emoji,Symbola,Roboto Mono,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
     font_point: 18
-    label_font_face: "Symbola,Roboto Mono"
+    label_font_face: "IBM Plex Serif"
     label_font_point: 16
     #comment_font_face: 'Lucida Grande'
     comment_font_point: 16
@@ -246,6 +248,7 @@ patch:
       horizontal: true # 横排显示
       candidate_format: "%c\u2005%@  " # 候选格式
     system_blue:
+      translucency: true
       color_space: display_p3 # Only available on macOS 10.12+
       back_color: 0xFFFFFF # 候选条背景色，24位色值，16进制，BGR顺序
       border_color: 0xFFFFFF # 边框色
@@ -277,6 +280,7 @@ patch:
       # label_font_point: 14
       # comment_font_face: "PingFangSC-Regular,Source Han Sans Pro,NotoSansCJKsc-Regular, HanaMinB"
       # comment_font_point: 14
+      translucency: true
       corner_radius: 5
       hilited_corner_radius: 5
       border_height: 4

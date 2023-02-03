@@ -101,6 +101,6 @@ TODO	todo
 DOING	doing
 DONE	done
 # APP
-QQ	qq
+#QQ	qq
 # product
 type-C	typec
