@@ -59,6 +59,9 @@ switches:
   - name: topup_hint
     reset: 1
     states: ["关顶功提示", "开顶功提示"]
+  - name: sbb_hint
+    reset: 1
+    states: ["关顶功提示", "开顶功提示"]
 
 punctuator:
   import_preset: symbols
