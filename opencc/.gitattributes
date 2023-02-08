@@ -1,4 +1,0 @@
-PYPhrases.txt filter=lfs diff=lfs merge=lfs -text
-PYCharacters.txt filter=lfs diff=lfs merge=lfs -text
-emoji_category.txt filter=lfs diff=lfs merge=lfs -text
-emoji_word.txt filter=lfs diff=lfs merge=lfs -text

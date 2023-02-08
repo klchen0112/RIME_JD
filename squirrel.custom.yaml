@@ -82,8 +82,8 @@ patch:
     org.gnu.Aquamacs:
       ascii_mode: true
     org.gnu.Emacs:
-      ascii_mode: true
-      no_inline: true
+      ascii_mode: false
+      no_inline: false
     co.zeit.hyper:
       ascii_mode: true
     com.google.Chrome:
@@ -113,7 +113,7 @@ patch:
 
     # space between candidates in stacked layout
     # space between preedit and candidates in non-inline mode
-    inline_candidate: true
+    inline_candidate: false
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间"
     # adjust the base line of vertical text
     #base_offset: 6
