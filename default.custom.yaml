@@ -13,20 +13,18 @@ patch:
     abbreviate_options: true
     option_list_separator: "／"
   schema_list:
-    # - schema: xkjd6
     - schema: keydo
     - schema: easy_en
     - schema: liangfen
-    - schema: melt_pinyin
   menu:
     page_size: 6
   ascii_composer:
     good_old_caps_lock: true
     switch_key:
-      Shift_L: commit_code
-      Shift_R: commit_code
-      Control_L: noop
-      Control_R: noop
+      Shift_L: commit_text
+      Shift_R: commit_text
+      Control_L: commit_code
+      Control_R: commit_code
       Caps_Lock: commit_code
       Eisu_toggle: clear
   key_binder:
