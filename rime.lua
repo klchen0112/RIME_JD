@@ -49,11 +49,9 @@ number_translator = require("xnumber")
 -- 候选过滤器
 keydo_cand_filter = require("keydo.filters.cand")
 
-
-
-
-
-
+---------------------
+-- Easy English --
+---------------------
 -- easy_en_enhance_filter: 连续输入增强
 -- 详见 `lua/easy_en.lua`
 local easy_en = require("easy_en")
