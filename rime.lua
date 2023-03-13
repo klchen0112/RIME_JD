@@ -24,32 +24,33 @@ librime-lua 样例
 配方文件中的引用方法为：`...@foo`。
 --]]
 
-date_time_translator = require("date_time")
-
 
 -- single_char_filter: 候选项重排序，使单字优先
 -- 详见 `lua/single_char.lua`
 -- single_char_filter = require("single_char")
 
 
--- xkjd6_filter: 单字模式 & 630 即 ss 词组提示
---- 修改自 @懒散 TsFreddie https://github.com/TsFreddie/jdc_lambda/blob/master/rime/lua/xkjdc_sbb_hint.lua
--- 可由 schema 的 danzi_mode 与 wxw_hint 开关控制
--- 详见 `lua/xkjd6_filter.lua`
-xkjd6_filter = require("xkjd6_filter")
+---------------------
+-- 键道·我流逻辑块 --
+---------------------
 
 -- 顶功处理器
 topup_processor = require("for_topup")
 
--- 声笔笔简码提示 | 顶功提示 | 补全处理
-hint_filter = require("for_hint")
+-- 选择处理器
+keydo_select_processor = require("keydo.processors.select")
 
--- number_translator: 将 `=` + 阿拉伯数字 翻译为大小写汉字
--- 详见 `lua/number.lua`
+-- 日期与时间转换器
+keydo_date_time_translator = require("keydo.translators.date_time")
+
+-- 数字转换器：将阿拉伯数字转换为对应汉字（由`=`引导）
 number_translator = require("xnumber")
 
--- 用 ' 作为次选键
-smart_2 = require("smart_2")
+-- 候选过滤器
+keydo_cand_filter = require("keydo.filters.cand")
+
+
+
 
 
 

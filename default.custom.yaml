@@ -3,9 +3,7 @@ patch:
   switcher:
     caption: "「切换方案」"
     hotkeys:
-      - "Control+Shift+grave"
-      - "Control+grave"
-      - "F4"
+      - "Shift+space"
     save_options:
       - full_shape
       - ascii_punct
@@ -15,7 +13,8 @@ patch:
     abbreviate_options: true
     option_list_separator: "／"
   schema_list:
-    - schema: xkjd6
+    # - schema: xkjd6
+    - schema: keydo
     - schema: easy_en
     - schema: liangfen
     - schema: melt_pinyin
