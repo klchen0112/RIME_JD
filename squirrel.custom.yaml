@@ -110,10 +110,10 @@ patch:
     # text_orientation: horizontal # horizontal | vertical
     candidate_list_layout: linear
     inline_preedit: true
-
+    inline_candidate: true
     # space between candidates in stacked layout
     # space between preedit and candidates in non-inline mode
-    inline_candidate: false
+
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间"
     # adjust the base line of vertical text
     #base_offset: 6
@@ -123,6 +123,8 @@ patch:
     label_font_point: 16
     #comment_font_face: 'Lucida Grande'
     comment_font_point: 16
+    line_spacing: 8 # [Mac] 候选项行距（仅在竖排模式中有效，且无法影响首/末选项）
+    spacing: 8 # 输入区与候选区间距
   preset_color_schemes:
     mojave_dark:
       name: "沙漠夜／Mojave Dark"

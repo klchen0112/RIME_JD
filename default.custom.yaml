@@ -5,10 +5,11 @@ patch:
     hotkeys:
       - "Shift+space"
     save_options:
+      - ascii-mode
       - full_shape
-      - ascii_punct
-      - simplification
       - extended_charset
+      - simplification
+      - pinyin
     fold_options: true
     abbreviate_options: true
     option_list_separator: "／"
