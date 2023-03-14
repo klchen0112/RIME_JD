@@ -123,7 +123,7 @@ patch:
     label_font_point: 16
     #comment_font_face: 'Lucida Grande'
     comment_font_point: 16
-    line_spacing: 8 # [Mac] 候选项行距（仅在竖排模式中有效，且无法影响首/末选项）
+    # line_spacing: 8 # [Mac] 候选项行距（仅在竖排模式中有效，且无法影响首/末选项）
     spacing: 8 # 输入区与候选区间距
   preset_color_schemes:
     mojave_dark:

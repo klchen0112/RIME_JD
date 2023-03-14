@@ -62,3 +62,21 @@ easy_en_enhance_filter = easy_en.enhance_filter
 
 
 
+---------------------
+-- 键道·我流逻辑块 --
+---------------------
+
+-- 顶功处理器
+topup_processor = require("for_topup")
+
+-- 选择处理器
+keydo_select_processor = require("keydo.processors.select")
+
+-- 日期与时间转换器
+keydo_date_time_translator = require("keydo.translators.date_time")
+
+-- 数字转换器：将阿拉伯数字转换为对应汉字（由`=`引导）
+number_translator = require("xnumber")
+
+-- 候选过滤器
+keydo_cand_filter = require("keydo.filters.cand")
