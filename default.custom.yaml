@@ -14,7 +14,6 @@ patch:
     abbreviate_options: true
     option_list_separator: "／"
   schema_list:
-    - schema: xkjd6
     - schema: easy_en
     - schema: liangfen
     - schema: keydo
