@@ -6,8 +6,8 @@ patch:
       - "Shift+space"
   schema_list:
     - schema: keydo
-    # - schema: easy_en
-    # - schema: liangfen
+    - schema: easy_en
+    - schema: liangfen
   menu:
     page_size: 6
   ascii_composer:
