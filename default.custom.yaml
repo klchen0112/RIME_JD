@@ -4,19 +4,10 @@ patch:
     caption: "「切换方案」"
     hotkeys:
       - "Shift+space"
-    save_options:
-      - ascii-mode
-      - full_shape
-      - extended_charset
-      - simplification
-      - pinyin
-    fold_options: true
-    abbreviate_options: true
-    option_list_separator: "／"
   schema_list:
-    - schema: easy_en
-    - schema: liangfen
     - schema: keydo
+    # - schema: easy_en
+    # - schema: liangfen
   menu:
     page_size: 6
   ascii_composer:
@@ -51,12 +42,3 @@ patch:
       - { when: always, accept: Control+Shift+2, select: easy_en }
       - { when: always, accept: Control+Shift+3, select: liangfen }
       - { when: always, accept: Control+Shift+4, select: melt_pinyin }
-  ascii_composer:
-    good_old_caps_lock: true
-    switch_key:
-      Shift_L: inline_ascii
-      Shift_R: commit_text
-      Control_L: noop
-      Control_R: noop
-      Caps_Lock: clear
-      Eisu_toggle: clear
