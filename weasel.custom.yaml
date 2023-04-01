@@ -6,7 +6,7 @@ patch:
     font_point: 14 # 主题字体字号
     fullscreen: false # [Win] 是否在全屏显示输入窗口（默认隐藏）
     horizontal: true # 候选项是否横排（默认横排）
-    inline_preedit: false # 是否开启输入区嵌入（默认开启）
+    inline_preedit: true # 是否开启输入区嵌入（默认开启）
     label_format: "%s."
   # preedit_type: preview # [Win] 输入区嵌入模式（默认预览编码）
   "preset_color_schemes/win10":  # 在配色方案列表裏加入標識爲 starcraft 的新方案

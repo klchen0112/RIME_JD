@@ -8,6 +8,7 @@ patch:
     - schema: keydo
     - schema: easy_en
     - schema: liangfen
+    - schema: rime_ice
   menu:
     page_size: 6
   ascii_composer:
