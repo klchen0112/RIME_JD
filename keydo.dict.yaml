@@ -16,24 +16,24 @@ import_tables:
 # =======================================
 # ---------------------------------------
 # 扩展：特殊简码
-  - keydo_dict/keydo.shorthand_sp
+  - keydo_dicts/keydo.shorthand_sp
 # ---------------------------------------
 # 扩展：二级简码
-  - keydo_dict/keydo.shorthand_l2
+  - keydo_dicts/keydo.shorthand_l2
 # ---------------------------------------
 # 扩展：词组
-  - keydo_dict/keydo.phrases
+  - keydo_dicts/keydo.phrases
 # ---------------------------------------
 # 扩展：一级简码
-  - keydo_dict/keydo.shorthand_l1
+  - keydo_dicts/keydo.shorthand_l1
 # ---------------------------------------
 # 扩展：单字
-  - keydo_dict/keydo.chars
+  - keydo_dicts/keydo.chars
 # ---------------------------------------
 # 扩展：生僻单字
-  - keydo_dict/keydo.chars_extra
+  - keydo_dicts/keydo.chars_extra
 # ---------------------------------------
 # 扩展：快捷输入
-  - keydo_dict/keydo.shortcuts
+  - keydo_dicts/keydo.shortcuts
 # ---------------------------------------
 # =======================================
