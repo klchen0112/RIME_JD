@@ -5,10 +5,9 @@ patch:
     hotkeys:
       - "Shift+space"
   schema_list:
-    - schema: keydo
+    - schema: xkjd6
     - schema: easy_en
     - schema: liangfen
-    - schema: rime_ice
   menu:
     page_size: 6
   ascii_composer:
