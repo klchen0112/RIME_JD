@@ -188,7 +188,7 @@ repeat_history:
 emoji_cn:
   opencc_config: emoji.json
   option_name: emoji_cn
-  tips: all
+  # tips: all
 
 # bmms:
 #   opencc_config: pinyin.json
