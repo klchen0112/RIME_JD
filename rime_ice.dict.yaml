@@ -14,4 +14,6 @@ import_tables:
 
   # 建议把扩展词库放到下面，有重复词条时，最上面的权重生效
   # - cn_dicts/mydict
+  - cnd_dicts/pinyin_simp_moe
+  - cnd_dicts/pinyin_simp_wiki
 ...

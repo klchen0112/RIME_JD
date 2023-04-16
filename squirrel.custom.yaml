@@ -120,7 +120,7 @@ patch:
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间"
     # adjust the base line of vertical text
     #base_offset: 6
-    font_face: "PingFang SC,Apple Color Emoji,Symbola,Noto Color Emoji,Segoe UI Emoji,Twitter Color Emoji,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
+    font_face: "PingFang SC,Apple Color Emoji,Symbola,Noto Color Emoji,Liberation Mono,Noto Sans Symbols2,Segoe UI Emoji,FreeSerif,Twitter Color Emoji,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
     font_point: 18
     label_font_face: "IBM Plex Serif"
     label_font_point: 16
@@ -138,7 +138,6 @@ patch:
       border_height: 6
       border_width: 12
       border_color_width: 0
-      font_face: "PingFangSC-Regular,Noto Sans CJK SC Regular,HanaMinB"
       font_point: 18
       label_font_point: 13
       text_color: 0xdedddd
@@ -185,16 +184,11 @@ patch:
       candidate_text_color: 0x3c3c3c # 预选项文字颜色
       comment_text_color: 0x999999 # 拼音等提示文字颜色
       label_color: 0x999999 # 预选栏编号颜色
-      # font_face: "PingFangSC-Regular,Noto Sans CJK SC Regular,HanaMinB" # 候选词编号字体
-      # font_point: 16 # 候选文字大小
-      # label_font_point: 14 # 候选编号大小
-      # comment_font_point: 14
       corner_radius: 5 # 候选条圆角
       hilited_corner_radius: 5 # 高亮圆角
       border_height: 4 # 窗口上下高度
       border_width: 4 # 窗口左右宽度
       border_color_width: 0 # 输入条边框宽度
-      # label_font_face: "SFCompactText-Regular"  # 候选词编号字体
     macos_dark:
       author: "一方<liuour@gmail.com>"
       back_color: 0x252a2e # 候选条背景色，24位色值，16进制，BGR顺序
@@ -261,22 +255,14 @@ patch:
       label_color: 0x999999 # 预选栏编号颜色
       horizontal: true # 水平排列
       candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
-      font_face: "PingFangSC-Regular,Noto Sans CJK SC Regular,HanaMinB" # 候选词编号字体
       font_point: 16 # 候选文字大小
       label_font_point: 14 # 候选编号大小
-      label_font_face: "SFCompactText-Regular" # 候选词编号字体
       corner_radius: 6 # 候选条圆角
       hilited_corner_radius: 4 # 高亮圆角
       border_height: 4 # 窗口边界高度，大于圆角半径才生效
       border_width: 4 # 窗口边界宽度，大于圆角半径才生效
     dracula:
       name: "Dracula"
-      # font_face: "PingFangSC-Regular,Source Han Sans Pro,NotoSansCJKsc-Regular, HanaMinB"
-      # font_point: 16
-      # label_font_face: "Lucida Grande"
-      # label_font_point: 14
-      # comment_font_face: "PingFangSC-Regular,Source Han Sans Pro,NotoSansCJKsc-Regular, HanaMinB"
-      # comment_font_point: 14
       translucency: true
       corner_radius: 5
       hilited_corner_radius: 5
