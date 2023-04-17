@@ -7,10 +7,12 @@ sort: by_weight #字典初始排序，可選original或by_weight
 use_preset_vocabulary: false
 
 import_tables:
-  - "easy_en"
+  - "en_dicts/easy_en"
   - "en_dicts/calculus_en_word"
   - "en_dicts/linear_algebra_en_word"
   - "en_dicts/probability_en_word"
   - "en_dicts/algorithm"
   - "en_dicts/ide_editor"
   - "en_dicts/company"
+  - en_dicts/en_ext  # 补充
+  - en_dicts/en      # 英文主词库
