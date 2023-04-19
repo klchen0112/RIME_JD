@@ -128,6 +128,11 @@ patch:
     comment_font_point: 16
     # line_spacing: 8 # [Mac] 候选项行距（仅在竖排模式中有效，且无法影响首/末选项）
     spacing: 8 # 输入区与候选区间距
+    corner_radius: 4.0 # 候选条圆角
+    hilited_corner_radius: 4.0 # 高亮圆角
+    border_height: 3.0  # 窗口上下高度
+    border_width: 3.0 # 窗口左右宽度
+    base_offset: 3.0
   preset_color_schemes:
     mojave_dark:
       name: "沙漠夜／Mojave Dark"
@@ -139,7 +144,6 @@ patch:
       border_width: 12
       border_color_width: 0
       font_point: 18
-      label_font_point: 13
       text_color: 0xdedddd
       back_color: 0x3c3c3c
       label_color: 0x888785
@@ -166,8 +170,6 @@ patch:
       hilited_candidate_text_color: 0xc98915
       hilited_text_color: 0x000000
       horizontal: true
-      label_color: 0x888888
-      label_font_point: 12
       name: "简约白／Clean White"
       text_color: 0x808080
 
@@ -203,13 +205,7 @@ patch:
       comment_text_color: 0x999999 # 拼音等提示文字颜色
       horizontal: true # 水平排列
       label_color: 0x999999 # 预选栏编号颜色
-      font_point: 20 # 候选文字大小
-      label_font_point: 18 # 候选编号大小
-      corner_radius: 6 # 候选条圆角
-      hilited_corner_radius: 6 # 高亮圆角
-      border_height: 4 # 窗口上下高度
-      border_width: 4 # 窗口左右宽度
-      border_color_width: 0 # 输入条边框宽度
+
     win10:
       candidate_text_color: 0x000000 # 预选项文字颜色
       comment_text_color: 0x888888 # 拼音等提示文字颜色
@@ -223,20 +219,6 @@ patch:
       hilited_label_color: 0xffffff # 已选字的数字的颜色
       label_color: 0x888888 # 预选栏编号颜色
       label_format: "%s"
-      font_point: 16 # 候选文字大小
-      label_font_point: 16 # 候选编号大小
-      corner_radius: 0 # 候选条圆角
-      min_width: 160
-      min_height: 0
-      border_width: 6 # 窗口左右宽度
-      border_height: 6 # 窗口左右高度
-      margin_x: 12 # 字起始距左边距离
-      margin_y: 12 # 字上下边距
-      spacing: 10 # 间距
-      candidate_spacing: 24 # 候选字间隔
-      hilite_spacing: 8 # 序号和候选字之间的间隔
-      hilite_padding: 12 # 候选字背景色色块高度 若想候选字背景色块无边界填充候选框，仅需其高度和候选字上下边距一致即可
-      round_corner: 0 # 候选字背景色块圆角幅度
       horizontal: true # 横排显示
       candidate_format: "%c\u2005%@  " # 候选格式
     system_blue:
@@ -254,22 +236,10 @@ patch:
       text_color: 0x424242 # 拼音行文字颜色
       label_color: 0x999999 # 预选栏编号颜色
       horizontal: true # 水平排列
-      candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间的。
-      font_point: 16 # 候选文字大小
-      label_font_point: 14 # 候选编号大小
-      corner_radius: 6 # 候选条圆角
-      hilited_corner_radius: 4 # 高亮圆角
-      border_height: 4 # 窗口边界高度，大于圆角半径才生效
-      border_width: 4 # 窗口边界宽度，大于圆角半径才生效
+
     dracula:
       name: "Dracula"
       translucency: true
-      corner_radius: 5
-      hilited_corner_radius: 5
-      border_height: 4
-      border_width: 4
-      border_color_width: 0
-      base_offset: 0
       color_space: display_p3
       back_color: 0x352A28
       border_color: 0x352A28
@@ -298,11 +268,6 @@ patch:
       hilited_comment_text_color: 0x808080     # 注解文字高亮
     DoomOneLight:
       name: "Doom One Light"
-      corner_radius: 5.0
-      hilited_corner_radius: 5.0
-      border_height: 5.0
-      border_width: 2.0
-      base_offset: 2.0
       color_space: display_p3
       back_color: 0xFBFBFB
       candidate_text_color: 0x785400
