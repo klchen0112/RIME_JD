@@ -120,7 +120,7 @@ patch:
     candidate_format: "%c\u2005%@" # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间"
     # adjust the base line of vertical text
     #base_offset: 6
-    font_face: "PingFang SC,Apple Color Emoji,Noto Color Emoji,Liberation Mono,Noto Sans Symbols2,Segoe UI Emoji,Twitter Color Emoji,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
+    font_face: "PingFang SC,Apple Color Emoji,Liberation Mono,Noto Sans Symbols2,Segoe UI Emoji,Twitter Color Emoji,LXGW WenKai Mono,Noto Sans CJK SC Regular,HanaMinB"
     font_point: 18
     label_font_face: "IBM Plex Serif"
     label_font_point: 16
