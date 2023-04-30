@@ -40,9 +40,6 @@ switches:
     states: [ 中文, 西文 ]
   - name: full_shape
     states: [ 半角, 全角 ]
-  - name: jffh
-    reset: 0
-    states: [ 简体, 繁體 ]
   - name: danzi_mode
     reset: 0
     states: [ "词组", "单字" ]
@@ -52,7 +49,8 @@ switches:
   - name: completion
     reset: 1
   #   states: [ "匹配", "补全" ]
-  - name: EN2en
+  - name: emoji
+    states: [ 💀, 😄 ]
     reset: 1
   - name: topup_hint
     reset: 1
@@ -156,10 +154,7 @@ engine:
     - lua_translator@date_time_translator
     - lua_translator@number_translator
   filters:
-    - simplifier@emoji_cn
-    - simplifier@jffh
-    - simplifier@bmms
-    - simplifier@EN2en
+    - simplifier@emoji
     - uniquifier
     - reverse_lookup_filter@danzi_lookup
     - lua_filter@xkjd6_filter
@@ -190,28 +185,10 @@ repeat_history:
   initial_quality: 10000
 
 
-EN2en:
-  opencc_config: EN2en.json
-  option_name: EN2en
-
-
-emoji_cn:
+emoji:
   opencc_config: emoji.json
-  option_name: emoji_cn
-  tips: all
-
-
-jffh:
-  opencc_config: s2t.json
-  option_name: jffh
-
-
-bmms:
-  opencc_config: pinyin.json
-  option_name: bmms
-  show_in_comment: true
-  comment_format:
-    - "xform/'/ /"
+  option_name: emoji
+  # tips: all
 
 
 danzi_lookup:

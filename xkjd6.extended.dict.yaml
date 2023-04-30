@@ -80,7 +80,7 @@ import_tables:
 # *  - xkjd_dicts/xkjd6.wxw
 # ---------------------------------------
 ## 扩展：声韵声@塔里
-#  - xkjd_dicts/xkjd6.sys
+ - xkjd_dicts/xkjd6.sys
 # ---------------------------------------
 ## 扩展：东方词库@DRGICEAKE
 #  - xkjd_dicts/xkjd6.touhou
