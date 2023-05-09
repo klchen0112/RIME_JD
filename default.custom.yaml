@@ -4,6 +4,7 @@ patch:
     caption: "「切换方案」"
     hotkeys:
       - "Shift+space"
+      - F4
   schema_list:
     - schema: xkjd6
     - schema: easy_en
