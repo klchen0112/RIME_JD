@@ -5,6 +5,9 @@ schema:
   schema_id: xkjd6
   name: 键道6
   version: "2.2"
+  dependencies:
+   - easy_en
+   - liangfen
 
 
 # Layout config
@@ -141,6 +144,7 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
+    - affix_segmentor@easy_en
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -148,8 +152,7 @@ engine:
     - punct_translator
     - table_translator
     - history_translator@repeat_history
-    - lua_translator@date_time_translator
-    - lua_translator@number_translator
+    - table_translator@easy_en
   filters:
     - simplifier@emoji
     - uniquifier
@@ -159,6 +162,7 @@ speller:
   auto_select: true
   alphabet: "abcdefghijklmnopqrstuvwxyz;/`"
   initials: "abcdefghijklmnopqrstuvwxyz;/`"
+
 
 
 translator:
@@ -203,15 +207,11 @@ key_binder:
 
 
 recognizer:
+  import_preset: default
   patterns:
     # __include: "layout/patterns"
     punct: "^/([0-9]0?|[a-z]+)$"
-    danzi_lookup: "[a-z`]*`+[a-z`]*"
-    email: "^[a-z][-_.0-9a-z]*@.*$"
-    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
-    pinyin: "(?<![`A-Z])`[a-z']*;?$"
-    url: "^(www[.]|https?:|ftp:|mailto:).*$"
-    jsq: "^=[^;']+$"
+    easy_en: "^i[a-z]*?$"
 
 
 topup:
@@ -222,6 +222,17 @@ topup:
   min_length_danzi: 2
   topup_command: true
 
+easy_en:
+  tag: easy_en
+  dictionary: easy_en.extended
+  enable_sentence: true
+  enable_completion: true
+  enable_user_dict: false
+  comment_format:
+    - xform/.*//
+  prefix: "i"
+  tips: "〔单词〕"
 
 # input_code:
 #   __include: "layout/input_code"
+
