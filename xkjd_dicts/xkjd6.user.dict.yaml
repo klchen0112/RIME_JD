@@ -1,0 +1,9 @@
+# Rime dictionary
+# encoding: utf-8
+---
+name: xkjd6.user
+version: "2023.05.15"
+sort: original #字典初始排序，可選original或by_weight
+use_preset_vocabulary: false
+...
+长按	jpxfuv

@@ -10,32 +10,6 @@ schema:
    - liangfen
 
 
-# Layout config
-layout:
-  topup:
-    topup_this: "bcdefghjklmnpqrstwxyz"
-    topup_with: "avuio;"
-
-  algebra:
-    - derive/^[bcdefghjklmnpqrstwxyz;]([bcdefghjklmnpqrstwxyz;][avuio].*)$/`$1/
-    - derive/^([bcdefghjklmnpqrstwxyz;])[bcdefghjklmnpqrstwxyz;]([avuio].*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2})[avuio](.*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]).(.*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{2}).(.*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{3}).(.*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{4}).(.*)$/$1`$2/
-    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{5}).$/$1`/
-    - derive/^[bcdefghjklmnpqrstwxyz;]{2}([avuio`]*)$/``$1/
-
-  # input_code:
-  #   date: orq
-  #   time: ouj
-  #   week: oxq
-
-  patterns:
-    special: "^(?:;?[avuio])[a-z]{0,}"
-    # input_code: "^(?:orq?|ouj?|oxq?)"
-
 
 switches:
   - name: ascii_mode
@@ -153,15 +127,23 @@ engine:
     - table_translator
     - history_translator@repeat_history
     - table_translator@easy_en
-    - lua_translator@date_translator
-    - lua_translator@number_translator
+    #- lua_translator@date_translator
+    #- lua_translator@number_translator
   filters:
     - simplifier@emoji
     - uniquifier
     - lua_filter@xkjd6_filter
 speller:
   algebra:
-    __include: "layout/algebra"
+    - derive/^[bcdefghjklmnpqrstwxyz;]([bcdefghjklmnpqrstwxyz;][avuio].*)$/`$1/
+    - derive/^([bcdefghjklmnpqrstwxyz;])[bcdefghjklmnpqrstwxyz;]([avuio].*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2})[avuio](.*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]).(.*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{2}).(.*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{3}).(.*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{4}).(.*)$/$1`$2/
+    - derive/^([bcdefghjklmnpqrstwxyz;`]{2}[avuio`]{5}).$/$1`/
+    - derive/^[bcdefghjklmnpqrstwxyz;]{2}([avuio`]*)$/``$1/
   auto_select: true
   alphabet: "abcdefghijklmnopqrstuvwxyz;/`"
   initials: "abcdefghijklmnopqrstuvwxyz;/`"
@@ -211,9 +193,9 @@ recognizer:
 
 
 topup:
-  __include: "layout/topup"
+  topup_this: "bcdefghjklmnpqrstwxyz"
+  topup_with: "avuio;"
   min_length: 4
-  max_length: 6
   auto_clear: true
   min_length_danzi: 2
   topup_command: true

@@ -20,7 +20,7 @@ local function hint(cand, context, reverse)
 end
 
 local function can_topup(input_text,env)
-    for char in env.s do
+    for char in string.gmatch(env.s,'.') do
         if env.mem:dict_lookup(input_text .. char,true , 1) then
             return false
         end
@@ -37,6 +37,16 @@ end
 
 local function commit_hint(cand)
     cand:get_genuine().comment = '🚫' .. cand.comment
+end
+
+local function memoryCallback(memory, commit)
+	for i,dictentry in ipairs(commit:get())
+	do
+		memory:update_userdict(dictentry,0,"") -- do nothing to userdict
+		-- memory:update_userdict(dictentry,1,"") -- update entry to userdict
+		-- memory:update_userdict(dictentry,1,"") -- delete entry to userdict
+	end
+	return true
 end
 
 local function filter(input, env)
