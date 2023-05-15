@@ -8,6 +8,7 @@ schema:
   dependencies:
    - easy_en
    - liangfen
+   - rime_ice
 
 
 
@@ -119,6 +120,8 @@ engine:
     - ascii_segmentor
     - matcher
     - affix_segmentor@easy_en
+    - affix_segmentor@liangfen
+    - affix_segmentor@rime_ice
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -127,6 +130,8 @@ engine:
     - table_translator
     - history_translator@repeat_history
     - table_translator@easy_en
+    - script_translator@rime_ice
+    - script_translator@liangfen
     #- lua_translator@date_translator
     #- lua_translator@number_translator
   filters:
@@ -190,7 +195,8 @@ recognizer:
     # __include: "layout/patterns"
     punct: "^/([0-9]0?|[a-z]+)$"
     easy_en: "^i[a-z]*?$"
-
+    liangfen: "^v[a-z']*'?$"
+    rime_ice: "^u[a-z']*'?$"
 
 topup:
   topup_this: "bcdefghjklmnpqrstwxyz"
@@ -211,6 +217,24 @@ easy_en:
   prefix: "i"
   tips: "〔单词〕"
 
+liangfen:
+  tag: liangfen
+  dictionary: liangfen
+  enable_sentence: true
+  enable_completion: true
+  enable_user_dict: false
+  prefix: "v"
+  tips: "〔二分〕"
+
+
+rime_ice:
+  tag: rime_ice
+  dictionary: rime_ice
+  enable_sentence: true
+  enable_completion: true
+  enable_user_dict: false
+  prefix: "u"
+  tips: "〔全拼〕"
 # input_code:
 #   __include: "layout/input_code"
 
