@@ -6,14 +6,14 @@
 schema:
   schema_id: rime_ice
   name: 雾凇拼音
-  version: "2023-04-11"
+  version: "2023-05-08"
   author:
     - Dvel
   description: |
     雾凇拼音
     https://github.com/iDvel/rime-ice
   dependencies:
-    - easy_en  # 英文输入，作为次翻译器挂载到拼音方案
+    - melt_eng  # 英文输入，作为次翻译器挂载到拼音方案
     - liangfen  # 两分拼字，作为反查挂载到拼音方案
 
 
@@ -42,7 +42,8 @@ switches:
 # 输入引擎
 engine:
   processors:
-    - lua_processor@select_character  # 以词定字
+    - lua_processor@select_character            # 以词定字
+    # - lua_processor@cold_word_drop_processor  # 词条隐藏、降频
     - ascii_composer
     - recognizer
     - key_binder
@@ -62,16 +63,19 @@ engine:
     - script_translator
     - lua_translator@date_translator      # 时间、日期、星期
     - table_translator@custom_phrase      # 自定义短语 custom_phrase.txt
-    - table_translator@easy_en           # 英文输入
+    - table_translator@melt_eng           # 英文输入
     - reverse_lookup_translator@liangfen  # 反查，两分拼字
     - lua_translator@unicode              # Unicode
+    - lua_translator@number_translator    # 数字、金额大写
   filters:
-    - lua_filter@long_word_filter       # 长词优先
-    - simplifier@emoji                  # Emoji
-    - simplifier@traditionalize         # 简繁切换
-    - lua_filter@v_filter               # v 模式 symbols 优先（否则是英文优先）
-    - lua_filter@reduce_english_filter  # 降低部分英语单词在候选项的位置
-    - uniquifier                        # 去重
+    - simplifier@emoji                    # Emoji
+    - simplifier@traditionalize           # 简繁切换
+    # - lua_filter@is_in_user_dict        # 为用户词典中（输入过）的内容结尾加上一个星号
+    - lua_filter@v_filter                 # v 模式 symbols 优先（否则是英文优先）
+    - lua_filter@reduce_english_filter    # 降低部分英语单词在候选项的位置
+    # - lua_filter@cold_word_drop_filter  # 词条隐藏、降频
+    - lua_filter@long_word_filter         # 长词优先
+    - uniquifier                          # 去重
 
 
 # Lua 配置: 日期、时间、星期、ISO 8601、时间戳的触发关键字
@@ -102,7 +106,7 @@ reduce_english_filter:
   dal, dit, dub, dug, fab, gam, ger, gus, hem, hep, hud, kat, lam, lax, lex, lug,
   lux, moc, mos, mot, mum, nad, nay, nib, nip, pak, pap, pax, rig, rum, sac, sal,
   sax, sec, shin, sis, ska, slang, sus, tad, taj, tac, tic, yep, yum, fax, cain,
-  key, mob, buy, dam]
+  key, mob, buy, dam, wap, yes, but, put, lag]
 
 
 # 引入八股文
@@ -124,8 +128,8 @@ translator:
 
 
 # 次翻译器，英文
-easy_en:
-  dictionary: easy_en.extended     # 挂载词库 easy_en.dict.yaml
+melt_eng:
+  dictionary: melt_eng     # 挂载词库 melt_eng.dict.yaml
   enable_sentence: false   # 禁止造句
   enable_user_dict: false  # 禁用用户词典
   initial_quality: 1.1     # 初始权重
@@ -186,6 +190,7 @@ recognizer:
     punct: "^v([0-9]|10|[A-Za-z]+)$"  # 响应 symbols_v.yaml 的 symbols，用 'v' 替换 '/'
     reverse_lookup: "^u[a-z]+$"       # 响应两分拼字的反查
     unicode: "^U[a-f0-9]+"            # 响应 Unicode
+    number: "^R[0-9]+[.]?[0-9]*"      # 响应 number_translator
 
 
 # 从 default 继承快捷键

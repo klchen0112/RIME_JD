@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-04-15"
+version: "2023-05-13"
 sort: by_weight
 ...
 # 一些杂项
@@ -16,6 +16,7 @@ sort: by_weight
 .DS_Store	DSStore
 唵嘛呢叭咪吽	ongmanibeimeihong
 唵嘛呢嘛呢叭咪吽	ongmanimanibeimeihong
+README.md	READMEmd
 
 
 # 按键
@@ -193,9 +194,13 @@ Windows 8	Windows	8
 Windows 10	Windows	10
 Windows 11	Windows	11
 
+ERC-20	ERC
+ERC-721	ERC
+ERC-1155	ERC
 
-# 往下开始都是扩展单词
+
 # +_+
+TypeORM	TypeORM
 Griffiths	Griffiths
 Chapman	Chapman
 Walsh	Walsh
@@ -275,9 +280,14 @@ SSH	SSH
 Secure Shell	SSH
 Secure Shell	SecureShell
 ISO	ISO
+International Organization for Standardization	ISO
 ISO 8601	ISO
 RFC	RFC
+Request for Comments	RFC
 RFC 3339	RFC
+RFCs	RFCs
+IETF	IETF
+Internet Engineering Task Force	IETF
 Pro Max	ProMax
 Aeron	Aeron
 Aeron Chair	AeronChair
@@ -441,6 +451,7 @@ CallKit	CallKit
 OSS	OSS
 Object Storage Service	OSS
 Object Storage Service	ObjectStorageService
+OceanBase	OceanBase
 YouTube Music	YouTubeMusic
 Apple Music	AppleMusic
 TED	TED
@@ -499,6 +510,7 @@ Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
 Coding	Coding
 Django	Django
+DBMesh	DBMesh
 Excel	Excel
 Flask	Flask
 Facebook	Facebook
@@ -699,6 +711,7 @@ IBM	IBM
 International Business Machines	IBM
 International Business Machines	InternationalBusinessMachines
 iCloud	iCloud
+iCloud Mail	iCloudMail
 iCloud Drive	iCloudDrive
 iExplorer	iExplorer
 iFFmpeg	iFFmpeg
@@ -1336,7 +1349,6 @@ McCafe	McCafe
 BSD	BSD
 Berkeley Software Distribution	BSD
 Berkeley Software Distribution	BerkeleySoftwareDistribution
-Berkeley	Berkeley
 DNSPod	DNSPod
 Bandizip	Bandizip
 NATO	NATO
@@ -1611,8 +1623,6 @@ Comodo	Comodo
 McAfee	McAfee
 OK	OK
 NG	NG
-TRUE	TRUE
-FALSE	FALSE
 TV	TV
 VTuber	VTuber
 NVMe	NVMe
@@ -1667,9 +1677,10 @@ LGPL	LGPL
 GNU Lesser General Public License	LGPL
 GNU Lesser General Public License	GNULesserGeneralPublicLicense
 Mozilla	Mozilla
-Mozilla	Firefox	MozillaFirefox
+Mozilla Firefox	MozillaFirefox
 Apache	Apache
 Steam	Steam
+Steam Deck	SteamDeck
 App	App
 Android	Android
 android	android
@@ -2075,6 +2086,9 @@ stargazers	stargazers
 fallback	fallback
 Fyne	Fyne
 Claude	Claude
+Claude+	Claude
+Anthropic	Anthropic
+Poe	Poe
 overdue	overdue
 Cinderella	Cinderella
 WebGPU	WebGPU
@@ -2083,3 +2097,104 @@ gimme	gimme
 CodeWhisperer	CodeWhisperer
 Heisenberg	Heisenberg
 Codex	Codex
+storyteller	storyteller
+troublemaker	troublemaker
+troublemaking	troublemaking
+espanso	espanso
+okey	okey
+okey dokey	okeydokey
+CAPTCHA	CAPTCHA
+Coinbase	Coinbase
+Kraken	Kraken
+Huobi	Huobi
+Bitfinex	Bitfinex
+KuCoin	KuCoin
+OKX	OKX
+Arbitrum	Arbitrum
+Avalanche	Avalanche
+Binance	Binance
+Binance Smart Chain	BinanceSmartChain
+OpenSea	OpenSea
+BNB Chain	BNBChain
+Chainlink	Chainlink
+Cosmos	Cosmos
+Cardano	Cardano
+Polkadot	Polkadot
+Solana	Solana
+Starknet	Starknet
+Optimism	Optimism
+Polygon	Polygon
+NEAR Protocol	NEARProtocol
+Lens Protocal	LensProtocal
+zkSync	zkSync
+Arweave	Arweave
+Filecoin	Filecoin
+Harmony	Harmony
+Harmony One	HarmonyOne
+DApp	DApp
+DApps	DApps
+Uniswap	Uniswap
+SushiSwap	SushiSwap
+PancakeSwap	PancakeSwap
+JediSwap	JediSwap
+Orbiter	Orbiter
+MakerDAO	MakerDAO
+Compound	Compound
+Aave	Aave
+Curve	Curve
+Curve Finance	CurveFinance
+dYdX	dYdX
+NFT	NFT
+Non-Fungible Token	NFT
+Solidity	Solidity
+Argent	Argent
+argent	argent
+Argent X	ArgentX
+Braavos	Braavos
+Braavos Wallet	Braavos
+OneKey	OneKey
+Hamster	Hamster
+hamster	hamster
+hamsters	hamsters
+DYOR	DYOR
+Do Your Own Research	DYOR
+Noita	Noita
+Screen Studio	ScreenStudio
+Norah	Norah
+floccus	floccus
+Wappalyzer	Wappalyzer
+phony	phony
+noop	noop
+Kung Fu	KungFu
+prefixes	prefixes
+suffixes	suffixes
+DeepMind	DeepMind
+Google DeepMind	GoogleDeepMind
+TL;DR	TLDR
+Ant-Man	AntMan
+Spider-Man	SpiderMan
+ungoogled	ungoogled
+ungoogled-chromium	ungoogledchromium
+taxman	taxman
+RouterOS	RouterOS
+Sumatra	Sumatra
+Sumatra PDF	SumatraPDF
+sideload	sideload
+sideloading	sideloading
+misdirection	misdirection
+librime	librime
+JRPG	JRPG
+Japanese Role-Playing Game	JRPG
+Kuromis	Kuromis
+sorcerer	sorcerer
+sorcerers	sorcerers
+werewolf	werewolf
+disjunction	disjunction
+heil	heil
+maintainers	maintainers
+AmyTelecom	AmyTelecom
+Patreon	Patreon
+Anaconda	Anaconda
+LLaMA	LLaMA
+Large Language Model Meta AI	LLaMA
+fellatio	fellatio
