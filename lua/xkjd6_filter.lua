@@ -6,17 +6,26 @@ local function hint(cand, context, reverse)
     if utf8.len(cand.text) < 2 then
         return false
     end
-    
+
     local lookup = " " .. reverse:lookup(cand.text) .. " "
-    local short = string.match(lookup, " ([bcdefghjklmnpqrstwxyz][auiov]+) ") or 
+    local short = string.match(lookup, " ([bcdefghjklmnpqrstwxyz][auiov]+) ") or
                   string.match(lookup, " ([bcdefghjklmnpqrstwxyz][bcdefghjklmnpqrstwxyz]) ")
-    local input = context.input 
+    local input = context.input
     if short and utf8.len(input) > utf8.len(short) and not startswith(short, input) then
         cand:get_genuine().comment = cand.comment .. "〔" .. short .. "〕"
         return true
     end
 
     return false
+end
+
+local function can_topup(input_text,env)
+    for char in env.s do
+        if env.mem:dict_lookup(input_text .. char,true , 1) then
+            return false
+        end
+    end
+    return true
 end
 
 local function danzi(cand)
@@ -36,7 +45,7 @@ local function filter(input, env)
     local topup_hint_on = env.engine.context:get_option('topup_hint')
     local first = true
     local input_text = env.engine.context.input
-    local no_commit = topup_hint_on and input_text:len() < 4 and input_text:match("^[bcdefghjklmnpqrstwxyz]+$")
+    local no_commit = topup_hint_on and  input_text:match("^[" .. env.s .. "]+$") and (not can_topup(input_text,env))
     for cand in input:iter() do
         if first and no_commit and cand.type ~= 'completion' then
             commit_hint(cand)
@@ -52,7 +61,14 @@ local function filter(input, env)
 end
 
 local function init(env)
-    env.reverse = ReverseDb("build/xkjd6.extended.reverse.bin")
+    env.mem = Memory(env.engine,env.engine.schema)
+    env.mem:memorize(function(commit) memoryCallback(env.mem, commit) end)
+    local config = env.engine.schema.config
+    local dict_name = config:get_string("translator/dictionary")
+    env.reverse = ReverseDb("build/" .. dict_name .. ".reverse.bin")
+
+    env.b = config:get_string("topup/topup_with")
+    env.s = config:get_string("topup/topup_this")
 end
 
 return { init = init, func = filter }

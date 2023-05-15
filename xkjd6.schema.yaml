@@ -153,9 +153,12 @@ engine:
     - table_translator
     - history_translator@repeat_history
     - table_translator@easy_en
+    - lua_translator@date_translator
+    - lua_translator@number_translator
   filters:
     - simplifier@emoji
     - uniquifier
+    - lua_filter@xkjd6_filter
 speller:
   algebra:
     __include: "layout/algebra"
@@ -196,14 +199,7 @@ custom_phrase:
 
 
 key_binder:
-  bindings:
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - { when: always, accept: F6, select: .next }
-    - { when: always, accept: F7, toggle: jffh }
-    # - { when: has_menu, accept: "'", send: 2 }
-    - { when: has_menu, accept: "&", toggle: emoji_cn}
-    - { when: has_menu, accept: "^", toggle: bmms}
+  import_preset: default
 
 
 recognizer:
