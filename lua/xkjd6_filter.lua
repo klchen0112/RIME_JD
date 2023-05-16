@@ -57,7 +57,7 @@ local function filter(input, env)
     local input_text = env.engine.context.input
     local no_commit = topup_hint_on and  input_text:match("^[" .. env.s .. "]+$") and (not can_topup(input_text,env))
     for cand in input:iter() do
-        if first and no_commit and cand.type ~= 'completion' then
+        if first and no_commit then
             commit_hint(cand)
         end
         first = false

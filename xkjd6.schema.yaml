@@ -130,8 +130,8 @@ engine:
     - table_translator
     - history_translator@repeat_history
     - table_translator@easy_en
-    - script_translator@rime_ice
-    - script_translator@liangfen
+    - reverse_lookup_translator@rime_ice
+    - reverse_lookup_translator@liangfen
     #- lua_translator@date_translator
     #- lua_translator@number_translator
   filters:
@@ -201,10 +201,10 @@ recognizer:
 topup:
   topup_this: "bcdefghjklmnpqrstwxyz"
   topup_with: "avuio;"
-  min_length: 4
-  auto_clear: true
-  min_length_danzi: 2
-  topup_command: true
+  #min_length: 4
+  #auto_clear: true
+  #min_length_danzi: 2
+  #topup_command: true
 
 easy_en:
   tag: easy_en
@@ -240,6 +240,3 @@ rime_ice:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
-# input_code:
-#   __include: "layout/input_code"
-
