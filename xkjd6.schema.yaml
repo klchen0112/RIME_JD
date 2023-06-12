@@ -6,105 +6,101 @@ schema:
   name: 键道6
   version: "2.2"
   dependencies:
-   - easy_en
-   - liangfen
-   - rime_ice
-
-
+    - easy_en
+    - liangfen
+    - rime_ice
 
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [中文, 西文]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [半角, 全角]
   - name: danzi_mode
     reset: 0
-    states: [ "词组", "单字" ]
+    states: ["词组", "单字"]
   - name: wxw_hint
     reset: 1
-    states: [ "关₆₃₀", "开₆₃₀" ]
+    states: ["关₆₃₀", "开₆₃₀"]
   - name: completion
     reset: 1
   #   states: [ "匹配", "补全" ]
   - name: emoji
-    states: [ 💀, 😄 ]
+    states: [💀, 😄]
     reset: 1
   - name: topup_hint
     reset: 1
-    states: [ "关顶功提示", "开顶功提示" ]
-
+    states: ["关顶功提示", "开顶功提示"]
 
 punctuator:
   import_preset: symbols
   full_shape:
-    ' ' : { commit: '　' }
-    ',' : { commit: ， }
-    '.' : { commit: 。 }
-    '<' : [ 《, 〈, «, ‹ ]
-    '>' : [ 》, 〉, », › ]
-    '?' : { commit: ？ }
+    " ": { commit: "　" }
+    ",": { commit: ， }
+    ".": { commit: 。 }
+    "<": [《, 〈, «, ‹]
+    ">": [》, 〉, », ›]
+    "?": { commit: ？ }
     # '/' : { commit: ？ }
-    ';' : { commit: ； }
-    ':' : { commit: ： }
-    '''' : { pair: [ '‘', '’' ] }
-    '"' : { pair: [ '“', '”' ] }
-    '\' : [ '、', '＼' ]
-    '|' : [ '·', '｜', '§', '¦' ]
-    '`' : "｀"
-    '~' : '～'
-    '!' : { commit: ！ }
-    '@' : ＠
-    '#' : ＃
-    '%' : [ ％, '°', '℃' ]
-    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
-    '^' : { commit: …… }
-    '&' : ＆
-    '*' : [ ＊, ·, ・, ×, ※, ❂ ]
-    '(' : （
-    ')' : ）
-    '-' : '-'
-    '_' : ——
-    '+' : '+'
-    '=' : [ '=' ]
-    '[' : [ 「, 【, 〔, ［ ]
-    ']' : [ 」, 】, 〕, ］ ]
-    '{' : [ 『, 〖, ｛ ]
-    '}' : [ 』, 〗, ｝ ]
+    ";": { commit: ； }
+    ":": { commit: ： }
+    "'": { pair: ["‘", "’"] }
+    '"': { pair: ["“", "”"] }
+    '\': ["、", "＼"]
+    "|": ["·", "｜", "§", "¦"]
+    "`": "｀"
+    "~": "～"
+    "!": { commit: ！ }
+    "@": ＠
+    "#": ＃
+    "%": [％, "°", "℃"]
+    "$": [￥, "$", "€", "£", "¥", "¢", "¤"]
+    "^": { commit: …… }
+    "&": ＆
+    "*": [＊, ·, ・, ×, ※, ❂]
+    "(": （
+    ")": ）
+    "-": "-"
+    "_": ——
+    "+": "+"
+    "=": ["="]
+    "[": [「, 【, 〔, ［]
+    "]": [」, 】, 〕, ］]
+    "{": [『, 〖, ｛]
+    "}": [』, 〗, ｝]
   half_shape:
-    ',' : { commit: ， }
-    '.' : { commit: 。 }
-    '<' : [ 《, 〈, «, ‹ ]
-    '>' : [ 》, 〉, », › ]
-    '?' : { commit: ？ }
-    '/' : ['/']
-    ';' : { commit: ； }
-    ':' : { commit: ： }
-    '''' : { pair: [ '‘', '’' ] }
-    '"' : { pair: [ '“', '”' ] }
-    '\' : [ 、, '\', ＼ ]
-    '|' : [ ·, '|', ｜, '§', '¦' ]
-    '`' : '`'
-    '~' : [ '~', ～ ]
-    '!' : { commit: ！ }
-    '@' : '@'
-    '#' : '#'
-    '%' : [ '%', ％, '°', '℃' ]
-    '$' : [ ￥, '$', '€', '£', '¥', '¢', '¤' ]
-    '^' : { commit: …… }
-    '&' : '&'
-    '*' : [ '*', ＊, ·, ・, ×, ※, ❂ ]
-    '(' : '（'
-    ')' : '）'
-    '-' : '-'
-    '_' : ——
-    '+' : '+'
-    '=' : [ '=' ]
-    '[' : [ 「, 【, 〔, ［ ]
-    ']' : [ 」, 】, 〕,  ］ ]
-    '{' : [ 『, 〖, ｛ ]
-    '}' : [ 』, 〗, ｝ ]
-
+    ",": { commit: ， }
+    ".": { commit: 。 }
+    "<": [《, 〈, «, ‹]
+    ">": [》, 〉, », ›]
+    "?": { commit: ？ }
+    "/": ["/"]
+    ";": { commit: ； }
+    ":": { commit: ： }
+    "'": { pair: ["‘", "’"] }
+    '"': { pair: ["“", "”"] }
+    '\': [、, '\', ＼]
+    "|": [·, "|", ｜, "§", "¦"]
+    "`": "`"
+    "~": ["~", ～]
+    "!": { commit: ！ }
+    "@": "@"
+    "#": "#"
+    "%": ["%", ％, "°", "℃"]
+    "$": [￥, "$", "€", "£", "¥", "¢", "¤"]
+    "^": { commit: …… }
+    "&": "&"
+    "*": ["*", ＊, ·, ・, ×, ※, ❂]
+    "(": "（"
+    ")": "）"
+    "-": "-"
+    "_": ——
+    "+": "+"
+    "=": ["="]
+    "[": [「, 【, 〔, ［]
+    "]": [」, 】, 〕, ］]
+    "{": [『, 〖, ｛]
+    "}": [』, 〗, ｝]
 
 engine:
   processors:
@@ -130,7 +126,7 @@ engine:
     - table_translator
     - history_translator@repeat_history
     - table_translator@easy_en
-    - reverse_lookup_translator@rime_ice
+    - script_translator@rime_ice
     - reverse_lookup_translator@liangfen
     #- lua_translator@date_translator
     #- lua_translator@number_translator
@@ -153,8 +149,6 @@ speller:
   alphabet: "abcdefghijklmnopqrstuvwxyz;/`"
   initials: "abcdefghijklmnopqrstuvwxyz;/`"
 
-
-
 translator:
   dictionary: xkjd6.extended
   enable_charset_filter: false
@@ -165,18 +159,15 @@ translator:
   encode_commit_history: true
   # max_phrase_length: 6
 
-
 repeat_history:
   input: ;h #重复上次上屏内容
   size: 1
   initial_quality: 10000
 
-
 emoji:
   opencc_config: emoji.json
   option_name: emoji
   # tips: all
-
 
 custom_phrase:
   dictionary: ""
@@ -184,10 +175,8 @@ custom_phrase:
   db_class: stabledb
   enable_sentence: false
 
-
 key_binder:
   import_preset: default
-
 
 recognizer:
   import_preset: default
@@ -225,7 +214,6 @@ liangfen:
   enable_user_dict: false
   prefix: "v"
   tips: "〔二分〕"
-
 
 rime_ice:
   tag: rime_ice
