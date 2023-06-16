@@ -8,6 +8,18 @@ version: "2023.05.15"
 sort: original
 use_preset_vocabulary: false
 import_tables:
-  - xkjd_dicts/xkjd6
+  - xkjd_dicts/xkjd6_1
+  - xkjd_dicts/xkjd6_2
+  - xkjd_dicts/xkjd6_3
+  - xkjd_dicts/xkjd6_4
+  - xkjd_dicts/xkjd6_5
+  - xkjd_dicts/xkjd6_6
+  - xkjd_dicts/xkjd6_7
+  - xkjd_dicts/xkjd6_8
+  - xkjd_dicts/xkjd6_9
+  - xkjd_dicts/xkjd6_10
+  - xkjd_dicts/xkjd6_11
+  - xkjd_dicts/xkjd6_12
+  - xkjd_dicts/xkjd6_13
+  - xkjd_dicts/xkjd6_14
   - xkjd_dicts/xkjd6.user
-...
