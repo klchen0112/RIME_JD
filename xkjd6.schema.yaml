@@ -118,6 +118,7 @@ engine:
     - affix_segmentor@easy_en
     - affix_segmentor@liangfen
     - affix_segmentor@rime_ice
+    - affix_segmentor@private_phrase
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
@@ -125,6 +126,7 @@ engine:
     - punct_translator
     - table_translator
     - history_translator@repeat_history
+    - table_translator@private_phrase # 自定义短语 custom_phrase.txt
     - table_translator@easy_en
     - script_translator@rime_ice
     - reverse_lookup_translator@liangfen
@@ -183,9 +185,10 @@ recognizer:
   patterns:
     # __include: "layout/patterns"
     punct: "^/([0-9]0?|[a-z]+)$"
+    private_phrase: "^a[a-z]*?$"
+    rime_ice: "^u[a-z']*'?$"
     easy_en: "^i[a-z]*?$"
     liangfen: "^v[a-z']*'?$"
-    rime_ice: "^u[a-z']*'?$"
 
 topup:
   topup_this: "bcdefghjklmnpqrstwxyz"
@@ -194,6 +197,31 @@ topup:
   #auto_clear: true
   #min_length_danzi: 2
   #topup_command: true
+
+# 自定义短语：custom_phrase.txt
+private_phrase:
+  tag: private_phrase
+  dictionary: ""
+  user_dict: private_phrase
+  prefix: "a"
+  db_class: stabledb
+  enable_completion: false # 补全提示
+  enable_sentence: false # 禁止造句
+  initial_quality: 99 # custom_phrase 的权重应该比 pinyin 和 melt_eng 大
+
+rime_ice:
+  tag: rime_ice
+  dictionary: rime_ice
+  enable_sentence: true
+  enable_completion: true
+  enable_user_dict: false
+  prefix: "u"
+  tips: "〔全拼〕"
+  preedit_format:
+    - xform/^u(.+)/$1/
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
 
 easy_en:
   tag: easy_en
@@ -214,17 +242,3 @@ liangfen:
   enable_user_dict: false
   prefix: "v"
   tips: "〔二分〕"
-
-rime_ice:
-  tag: rime_ice
-  dictionary: rime_ice
-  enable_sentence: true
-  enable_completion: true
-  enable_user_dict: false
-  prefix: "u"
-  tips: "〔全拼〕"
-  preedit_format:
-    - xform/^u(.+)/$1/
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
