@@ -114,7 +114,7 @@ patch:
     horizontal: true
     candidate_list_layout: linear
     inline_preedit: true
-    inline_candidate: true
+    inline_candidate: false
     # space between candidates in stacked layout
     # space between preedit and candidates in non-inline mode
 
