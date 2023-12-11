@@ -6,6 +6,7 @@ patch:
       - "Shift+space"
       - F4
   schema_list:
+    - schema: xmjd6
     - schema: easy_en
     - schema: pinyin_simp
     - schema: japanese
