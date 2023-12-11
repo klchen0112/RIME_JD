@@ -6,10 +6,8 @@ patch:
       - "Shift+space"
       - F4
   schema_list:
-    - schema: xkjd6
     - schema: easy_en
-    - schema: rime_ice
-    - schema: liangfen
+    - schema: pinyin_simp
     - schema: japanese
   menu:
     page_size: 6
