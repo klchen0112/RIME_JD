@@ -71,4 +71,4 @@ local function enhance_filter(input, env)
    end
 end
 
-return { enhance_filter = { init = init, func = enhance_filter} }
+return { init = init, func = enhance_filter}
