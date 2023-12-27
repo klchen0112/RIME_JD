@@ -1,14 +1,6 @@
 #功能开关一键配置
 patch:
   schema/name: 🌟🐈   #修改方案名称，显示在空格上的名字
-  schema/dependencies:
-    - xmjd6.cx
-    - pinyin_simp
-    - liangfen
-    - easy_en
-    - xmjd6.gbk
-  pinyin_simp/dictionary: pinyin_simp.extended
-  xmjd6en/dictionary: easy_en.extended
   speller/auto_select: false    #自动上屏开关，默认关
   hint_text: ''    #顶功提示符
   #                         0选择第一个,1选择第二个
@@ -16,15 +8,15 @@ patch:
   switches/@1/reset: 0     #[ 全角, 半角 ]
   switches/@2/reset: 0     #[ 简体, 繁體 ]
   switches/@3/reset: 0     #[ 地球文, 火星文 ]
-  switches/@4/reset: 1     #[ 简约, 表情展示
+  switches/@4/reset: 1     #[ 简约, 表情展示  
   switches/@5/reset: 0     #[ 正常候选, 内嵌候选  ]
-  switches/@6/reset: 1     #[ 简约, 630提示
+  switches/@6/reset: 1     #[ 简约, 630提示 
   switches/@7/reset: 1     #[ 简约, 逐码展示 ]
 
 
   #流式功能配置，想使用流式请取消以下注释，取消注释删掉 # 即可
-
+  
   # engine/processors/@4: null
   # engine/processors/@5: null
-  # translator/enable_sentence: true
+  # translator/enable_sentence: true 
   # translator/enable_user_dict: true
