@@ -8,15 +8,15 @@ patch:
   switches/@1/reset: 0     #[ 全角, 半角 ]
   switches/@2/reset: 0     #[ 简体, 繁體 ]
   switches/@3/reset: 0     #[ 地球文, 火星文 ]
-  switches/@4/reset: 1     #[ 简约, 表情展示  
+  switches/@4/reset: 1     #[ 简约, 表情展示
   switches/@5/reset: 0     #[ 正常候选, 内嵌候选  ]
-  switches/@6/reset: 1     #[ 简约, 630提示 
+  switches/@6/reset: 1     #[ 简约, 630提示
   switches/@7/reset: 1     #[ 简约, 逐码展示 ]
 
-
+  xmjd6en/dictionary: easy_en.extended
   #流式功能配置，想使用流式请取消以下注释，取消注释删掉 # 即可
-  
+
   # engine/processors/@4: null
   # engine/processors/@5: null
-  # translator/enable_sentence: true 
+  # translator/enable_sentence: true
   # translator/enable_user_dict: true
