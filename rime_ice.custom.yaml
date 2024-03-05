@@ -1,0 +1,7 @@
+# Rime schema
+# encoding: utf-8
+
+
+
+patch:
+    melt_eng/dictionary:easy_en.extended

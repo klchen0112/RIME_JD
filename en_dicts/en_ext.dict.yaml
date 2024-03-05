@@ -7,7 +7,7 @@
 #
 ---
 name: en_ext
-version: "2023-10-30"
+version: "2024-02-27"
 sort: by_weight
 ...
 # 一些杂项
@@ -19,24 +19,24 @@ README.md	README.md
 
 # 按键
 Fn	Fn
-Cmd	Cmd
-Command	Command
+cmd	cmd
+command	command
 Ctrl	Ctrl
-Control	Control
+control	control
 Opt	Opt
-Option	Option
-Shift	Shift
-Tab	Tab
+option	option
+shift	shift
+tab	tab
 Caps	Caps
 CapsLock	CapsLock
-Return	Return
-Enter	Enter
-Space	Space
-Backspace	Backspace
+return	return
+enter	enter
+space	space
+backspace	backspace
 Del	Del
-Delete	Delete
+delete	delete
 Esc	Esc
-Eject	Eject
+eject	eject
 
 
 # 月份（据说好像 5、6、7 月不要缩写 https://www.zhihu.com/question/29896678）
@@ -432,7 +432,6 @@ WYSIWYG	WYSIWYG
 What You See Is What You Get	WYSIWYG
 Mark Text	MarkText
 Joplin	Joplin
-obsidian	obsidian
 SteamOS	SteamOS
 TikTok	TikTok
 IDC	IDC
@@ -487,7 +486,6 @@ IntelliJ	IntelliJ
 IntelliJ IDEA	IntelliJIDEA
 IntelliJ IDEA Community	IntelliJIDEACommunity
 IntelliJ IDEA Ultimate	IntelliJIDEAUltimate
-IDEA	IDEA
 IDEA Community	IDEACommunity
 IDEA Ultimate	IDEAUltimate
 IDE	IDE
@@ -564,6 +562,8 @@ Chief Executive Officer	ChiefExecutiveOfficer
 CTO	CTO
 Chief Technology Officer	CTO
 Chief Technology Officer	ChiefTechnologyOfficer
+CFO	CFO
+Chief Financial Officer	CFO
 Django	Django
 DBMesh	DBMesh
 Facebook	Facebook
@@ -585,16 +585,17 @@ markdown	markdown
 Microsoft Access	Access
 MongoDB	MongoDB
 MySQL	MySQL
+MyISAM	MyISAM
+InnoDB	InnoDB
 Node.js	Node.js
 Pornhub	Pornhub
-PostgreSQL	PostgreSQL
 Postgres	Postgres
 PowerPoint	PowerPoint
 PPT	PPT
 PowerPoint	PPT
 Microsoft PowerPoint	PPT
 PyCharm	PyCharm
-Roguelike	Roguelike
+roguelike	roguelike
 Redis	Redis
 rime	rime
 RION	RION
@@ -711,7 +712,7 @@ Dropbox	Dropbox
 Dropzone	Dropzone
 Endnote	Endnote
 Entropy	Entropy
-ePub	ePub
+EPUB	EPUB
 Eureka	Eureka
 ExFAT	ExFAT
 Extended File Allocation Table	ExFAT
@@ -767,6 +768,7 @@ IPN	IPN
 IPTV	IPTV
 iStat Menus	iStatMenus
 iTerm	iTerm
+iTerm2	iTerm2
 iTunes	iTunes
 iTunes Connect	iTunesConnect
 iTunes Match	iTunesMatch
@@ -819,8 +821,7 @@ OneNote	OneNote
 OS	OS
 Operating System	OS
 Operating System	OperatingSystem
-Overcast	Overcast
-Overflow	Overflow
+overcast	overcast
 PaintCode	PaintCode
 Parallels Desktop	ParallelsDesktop
 PayPal	PayPal
@@ -833,7 +834,6 @@ PlistEdit	pliPlistEdit
 PopClip	PopClip
 PowerPack	PowerPack
 Privoxy	Privoxy
-Pro	Pro
 Promotee	Promotee
 Proxifier	Proxifier
 Public Beta	PublicBeta
@@ -860,15 +860,12 @@ Software Development Kit	SoftwareDevelopmentKit
 Should I Sleep	ShouldISleep
 Simplenote	Simplenote
 Siri	Siri
-Sketch	Sketch
 Slicy	Slicy
 Snagit	Snagit
-Snip	Snip
 Sparkbox	Sparkbox
 Sparrow	Sparrow
 Speedtest	Speedtest
 Spotify	Spotify
-Spotlight	Spotlight
 SSL	SSL
 StackSocial	StackSocial
 Sublime Text	SublimeText
@@ -1200,7 +1197,6 @@ TickTick	TickTick
 CHDBits	CHDBits
 M-Team	M-Team
 Vim	Vim
-Wikipedia	Wikipedia
 Google Voice	GoogleVoice
 Workers	Workers
 Cloudflare Workers	CloudflareWorkers
@@ -1426,13 +1422,10 @@ PopCap Games	PopCapGames
 Cyberpunk	Cyberpunk
 Kotlin	Kotlin
 PhpStorm	PhpStorm
-Rider	Rider
 Datalore	Datalore
 DataSpell	DataSpell
 RubyMine	RubyMine
 AppCode	AppCode
-PyCharm Edu	PyCharmEdu
-IntelliJ IDEA Edu	IntelliJIDEAEdu
 Code With Me	CodeWithMe
 JetBrains Mono	JetBrainsMono
 JVM	JVM
@@ -1616,7 +1609,6 @@ Application Programming Interface	API
 Ethernet	Ethernet
 SOCKS	SOCKS
 PrintScreen	PrintScreen
-Backspace	Backspace
 DIY	DIY
 Do It Yourself	DIY
 DNA	DNA
@@ -1947,6 +1939,7 @@ Aquarius	Aquarius
 Pisces	Pisces
 tailwind	tailwind
 Fcitx	Fcitx
+Fcitx5	Fcitx5
 openSUSE	openSUSE
 defer	defer
 FOMO	FOMO
@@ -2202,6 +2195,7 @@ Loki	Loki
 panzer	panzer
 hardened	hardened
 motherfucker	motherfucker
+motherfuckers	motherfuckers
 motherfucking	motherfucking
 dict	dict
 latte	latte
@@ -2265,7 +2259,6 @@ medallion	medallion
 add-on	add-on
 add-ons	add-ons
 C#	C#
-C#	Csharp
 decode	decode
 KeyCastr	KeyCastr
 Laugh Tale	LaughTale
@@ -2361,3 +2354,105 @@ B2C	B2C
 C2B	C2B
 O2O	O2O
 NBA 2K	NBA2K
+tempting	tempting
+WebCatalog	WebCatalog
+Apple One	AppleOne
+pixiv	pixiv
+M4A1	M4A1
+shogun	shogun
+wail	wail
+wails	wails
+wailed	wailed
+wailing	wailing
+PK	PK
+WireGuard	WireGuard
+AdGuard	AdGuard
+Altman	Altman
+Ultraman	Ultraman
+silicones	silicones
+GPTs	GPTs
+sider	sider
+DALL·E	DALL·E
+keychain	keychain
+keychains	keychains
+guile	guile
+e.g.	e.g.
+i.e.	i.e.
+et al.	etal.
+Zettlr	Zettlr
+Codium	Codium
+CodiumAI	CodiumAI
+SaaS	SaaS
+Software as a service	SaaS
+gitignore	gitignore
+.gitignore	.gitignore
+humankind	humankind
+Alita	Alita
+epoll	epoll
+kqueue	kqueue
+LangChain	LangChain
+LangServe	LangServe
+LangSmith	LangSmith
+runc	runc
+containerd	containerd
+Melvor	Melvor
+Melvor Idle	MelvorIdle
+paradise	paradise
+ketchup	ketchup
+pinning	pinning
+WebSocket	WebSocket
+systemctl	systemctl
+reconfig	reconfig
+sudo	sudo
+flypy	flypy
+traefik	traefik
+deepin	deepin
+srv	srv
+usr	usr
+bin	bin
+AUR	AUR
+Arch User Repository	AUR
+pacman	pacman
+Pac-Man	Pac-Man
+eBPF	eBPF
+livid	livid
+DevOps	DevOps
+Zippo	Zippo
+goddamn	goddamn
+punctuator	punctuator
+punctuators	punctuators
+QR code	QRcode
+sentry	sentry
+Grafana	Grafana
+Mirtle	Mirtle
+Hadoop	Hadoop
+HBase	HBase
+hive	hive
+Flink	Flink
+Palworld	Palworld
+lark	lark
+submodule	submodule
+submodules	submodules
+Writerside	Writerside
+groundhog	groundhog
+groundhogs	groundhogs
+Writerside	Writerside
+Manifest V2	ManifestV2
+Manifest V3	ManifestV3
+copycat	copycat
+Google Gemini	GoogleGemini
+Google Gemini Advanced	GoogleGeminiAdvanced
+infuse	infuse
+headless	headless
+IMBA	IMBA
+imbalance	imbalance
+imbalanced	imbalanced
+GitButler	GitButler
+Sora	Sora
+WinNAS	WinNAS
+prune	prune
+Wireshark	Wireshark
+Theseus	Theseus
+Laravel	Laravel
+monolith	monolith
+Chiikawa	Chiikawa
