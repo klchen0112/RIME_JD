@@ -5,3 +5,6 @@
 
 patch:
     melt_eng/dictionary:easy_en.extended
+    schema/dependencies:
+        - easy_en
+        - radical_pinyin
