@@ -12,9 +12,14 @@ patch:
   switches/@5/reset: 0     #[ 正常候选, 内嵌候选  ]
   switches/@6/reset: 1     #[ 简约, 630提示
   switches/@7/reset: 1     #[ 简约, 逐码展示 ]
-
+  schema/dependencies:
+    - xmjd6.cx
+    - liangfen
+    - easy_en
+    - xmjd6.gbk
+    - rime-ice
   xmjd6en/dictionary: easy_en.extended
-  pinyin_simp/dictionary: pinyin_simp.extended
+  pinyin_simp/dictionary: rime-ice.extended
   #流式功能配置，想使用流式请取消以下注释，取消注释删掉 # 即可
 
   # engine/processors/@4: null
